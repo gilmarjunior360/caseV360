@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+    color: white;
+    background-color: #005742;
+    height: 50px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.btn button {
+    cursor: pointer;
+    background-color: #005742;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+}
+
+.btn button img {
+    filter: invert(1);
+}
+
+
+img {
+
+    height: 30px !important;
+    width: 30px !important;
+    cursor: pointer;
+
+}

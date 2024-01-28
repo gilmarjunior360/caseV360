@@ -1,0 +1,25 @@
+<section>
+
+    <ul>
+        <li *ngFor='let list of Lists'> 
+            <div class="item" >
+                <input type="text" (keyup.enter)="updateList(list)" [(ngModel)]="list.title">
+                <div class="buttons">
+                    <button (click)="redirectForList(list.id)">
+                        <img src="assets/icons/checklist.png" alt="">
+                    </button>
+                    <button (click)="deleteList(list)">
+                        <img src="assets/icons/icon-trash.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</section>
+
+<app-list-input-add (emitItemList)="ngOnInit()"></app-list-input-add>
+<app-list-delete-all *ngIf="Lists.length" (click)="deleteAllLists()"></app-list-delete-all>
+
+
+

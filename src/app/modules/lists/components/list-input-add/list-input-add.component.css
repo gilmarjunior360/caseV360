@@ -1,0 +1,28 @@
+:host {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+  }
+  
+  :host input{
+      width: 80%;
+  
+      border: none;
+      background: #3ea890;
+  
+      font-size: 16px;
+      color: white;
+      text-align: center;
+  
+      padding: 10px;
+      box-sizing: border-box;
+  
+  }
+  
+:host input::placeholder{
+    color: white;
+}
+
+:host input:focus::placeholder{
+    color: transparent
+}
